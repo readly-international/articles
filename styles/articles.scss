@@ -1,0 +1,181 @@
+$text-primary: #000000;
+$text-secondary: #707070;
+
+@mixin full-width-image {
+  width: calc(100% + 40px) !important;
+  text-align: center !important;
+  margin: 0 -20px 10px -20px !important;
+  max-height: none !important;
+  max-width: none !important;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 17px;
+  line-height: 1.2em;
+  margin: 0px;
+  padding: 20px 20px 20px 20px;
+
+  h1, h2, h3 {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  h1 {
+    font-size: 2.441em;
+    line-height: 1.1em;
+    margin-bottom: 8px;
+  }
+
+  h2 {
+    font-size: 1.953em;
+    line-height: 1.1em;
+    margin-bottom: 8px;
+    margin-top: 64px;
+  }
+
+  h3 {
+    font-size: 1.563em;
+    line-height: 1.1em;
+    font-weight: 400;
+    margin-top: 32px;
+    color: $text-secondary;
+  }
+
+  article {
+    margin: 1.25em;
+  }
+
+  header {
+    text-align: right;
+    font-family: "Helvetica Neue";
+    font-size: 1.6em;
+    color: #505050;
+  }
+
+  #headline {
+    font-size: 2.441em;
+    line-height: 1.1em;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 8px;
+  }
+
+  #byline {
+    font-weight: bold;
+    margin-bottom: 64px;
+  }
+
+  #subheadline {
+    font-size: 1.0em;
+    font-weight: 400;
+    font-size: 1.25em;
+    font-weight: 400;
+    line-height: 1.4em;
+    color: $text-secondary;
+    margin-bottom: 16px;
+  }
+
+  div.article-image {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 32px;
+
+    img {
+      max-width: 100%;
+      display: inline-block;
+      max-height: 16em;
+    }    
+  }
+
+  .full-width-image {
+    @include full-width-image();
+  }
+
+  .full-width-image-top {
+    @include full-width-image();
+    margin-top: -20px !important;
+  }
+
+  .article-image-credit {
+    font-size: 1.15em;
+  }
+
+  figure.space-right {
+    position: relative;
+  }
+
+  figure.space-right img {
+    width: 65%;
+  }
+
+  div.article-image-caption {
+    margin-top: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 0.8em;
+    line-height: 1.5;
+    color: $text-secondary;
+  }
+
+  p.article-para {
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-indent: 0em;
+    margin-bottom: 1.6em;
+    display: block;
+    word-break: break-word;
+  }
+
+  figure.space-right div.article-imageCaption {
+    text-align: left;
+    width: 30%;
+    position: absolute;
+    bottom: 6px;
+    right: 0px;
+  }
+
+  blockquote {
+    font-size: 1.25em;
+    font-weight: 400;
+    line-height: 1.4em;
+    color: $text-secondary;
+    text-align: center;
+    font-style: italic;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  p {
+    font-size: 1em;
+    line-height: 1.4em;
+  }
+
+  .byline {
+    margin-bottom: 64px;
+  }
+
+  .subheadline {
+    font-size: 1.25em;
+    font-weight: 400;
+    line-height: 1.4em;
+    color: $text-secondary;
+    margin-bottom: 16px;
+  }
+
+  .image-caption {
+    margin-top: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 0.8em;
+    line-height: 1.5;
+    color: $text-secondary;
+  }
+
+  li {
+    margin-bottom: 16px;
+  }
+
+}
